@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div>
     <tab-bar>
       <tab-bar-item link="/home" textColor="red">
         <span slot="itemImg">⚪</span>
@@ -31,7 +30,7 @@ import TabBar from "components/common/tabbar/TabBar.vue";
 import TabBarItem from "components/common/tabbar/TabBarItem.vue";
 
 export default {
-  name: "App",
+  name: "mainBar",
   data() {
     return {};
   },
