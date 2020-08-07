@@ -8,7 +8,7 @@
 
 <script>
 import NavBar from 'components/common/navbar/NavBar';
-import {getHomeUtilData} from 'network/home'
+import {getHomeMultiData} from 'network/home'
 
 export default {
 
@@ -19,14 +19,9 @@ export default {
     }
   },
   created() {
-    getHomeUtilData().then( (res) =>{
+    getHomeMultiData().then(res =>{
       console.log(res)
-      // 假设res的结构为：{
-      //   data:{
-      //     banner:[{...},{...}]
-      //   }
-      // }
-      this.banner = res.data.banner; //将请求到的数据保存
+      // this.banner = res.data.banner; //将请求到的数据保存
     })
   },
   components:{

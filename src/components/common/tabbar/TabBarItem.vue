@@ -49,4 +49,12 @@ export default {
   text-align: center;
   height: 49px;
 }
+.tabbar-box-item span{
+  display: inline-block;
+  padding-top: 3px;
+}
+.tabbar-box-item span img{
+  width: 25px;
+  height: 25px;
+}
 </style>
